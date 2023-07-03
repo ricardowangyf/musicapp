@@ -9,10 +9,12 @@
     "api": "mocker ./mocker"
   },
   "dependencies": {
+    "@node-ipc/js-queue": "^2.0.3",
     "axios": "^1.4.0",
     "core-js": "^3.8.3",
     "element-plus": "^2.3.7",
     "mockjs": "^1.1.0",
+    "parse": "^4.1.0",
     "vue": "^3.2.13",
     "vue-facebook-signin-button": "^1.0.1",
     "vue-router": "^4.2.2"
@@ -48,5 +50,9 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "description": "音乐播放器",
+  "main": "babel.config.js",
+  "author": "",
+  "license": "ISC"
 }
