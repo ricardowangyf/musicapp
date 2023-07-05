@@ -10,27 +10,13 @@
       <div class="password-input">
         <form>
           <img src="../assets/svg/aite.svg" class="icon-email" />
-          <input
-            class="password"
-            type="text"
-            placeholder="E-mail"
-            src="../svg/aite.svg"
-          />
+          <input class="password" type="text" placeholder="E-mail" src="../svg/aite.svg" />
         </form>
       </div>
       <div class="password-input">
         <img src="../assets/svg/password.svg" class="icon-email" />
-        <input
-          class="password"
-          type="text"
-          placeholder="Password"
-          src="../svg/aite.svg"
-        />
-        <img
-          :src="pwdFlag ? textIcon : eyesicon"
-          @click="changePwd"
-          class="shouandhide"
-        />
+        <input class="password" type="text" placeholder="Password" src="../svg/aite.svg" />
+        <img :src="pwdFlag ? textIcon : eyesicon" @click="changePwd" class="shouandhide" />
       </div>
     </div>
     <div class="forgot" @click="tiao()">
@@ -97,6 +83,7 @@ input {
   border-left: none;
   border-right: none;
 }
+
 input {
   outline: none;
 }
@@ -105,9 +92,11 @@ input {
   width: 100%;
   height: 740px;
 }
+
 .login-img img {
   width: 100%;
 }
+
 .title {
   transform: translate(-50%, -50%);
   font-family: Helvetica;
@@ -115,16 +104,19 @@ input {
   color: #fff;
   letter-spacing: 0;
 }
+
 .title {
   position: absolute;
   top: 20%;
   left: 33%;
 }
+
 .login-input {
   position: absolute;
   top: 30%;
   left: 15%;
 }
+
 .password {
   font-size: 21px;
   width: 74%;
@@ -132,52 +124,64 @@ input {
   color: #fff;
   padding-left: 30px;
 }
+
 .password {
   position: relative;
   right: 20px;
 }
+
 .password-input {
   margin-top: 40px;
 }
+
 .shouandhide {
   position: relative;
   right: 45px;
 }
+
 .icon-email {
   position: relative;
   top: 3px;
   left: 4px;
 }
+
 .icon-email {
   width: 20px;
   height: 20px;
 }
+
 .sign {
   border: none;
   width: 63%;
   left: 57px;
 }
+
 .sign {
   display: flex;
   justify-content: center;
 }
+
 .sign {
   position: absolute;
   top: 59%;
 }
+
 .sign button {
   border: none;
   background: #cbfb5e;
   padding: 17px;
   border-radius: 7px;
 }
+
 .sign button {
   width: 100%;
 }
+
 .space-around {
   display: flex;
   justify-content: center;
 }
+
 .space-around {
   position: relative;
   bottom: 23%;
@@ -186,9 +190,11 @@ input {
 .xian {
   border-bottom: 2px solid #8d92a3;
 }
+
 .xian {
   width: 16%;
 }
+
 .xian {
   position: relative;
   bottom: 5px;
@@ -197,35 +203,42 @@ input {
 .left {
   margin-right: 23px;
 }
+
 .right {
   margin-left: 17px;
 }
+
 .fenge {
   font-family: Helvetica;
   font-size: 11px;
   color: #8d92a3;
   letter-spacing: 0;
 }
+
 .tubiao {
   display: flex;
   justify-content: center;
 }
+
 .tubiao {
   position: relative;
   bottom: 20%;
   right: 2%;
 }
+
 .forgot {
   position: absolute;
   top: 49%;
   right: 19%;
 }
+
 .forgot h1 {
   font-size: 7px;
   color: #eeeeee;
   font-weight: 200;
   margin: 0;
 }
+
 .tubiao-left {
   padding-left: 14px;
 }
@@ -235,6 +248,7 @@ input {
   top: 96%;
   left: 28%;
 }
+
 .bottom {
   display: flex;
 }
@@ -247,6 +261,7 @@ input {
   margin: 0;
   font-weight: 400;
 }
+
 .siagn {
   font-family: Helvetica;
   font-size: 8px;
@@ -256,5 +271,4 @@ input {
   border: none;
   background: black;
   text-decoration: none;
-}
-</style>
+}</style>

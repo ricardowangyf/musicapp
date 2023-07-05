@@ -41,7 +41,7 @@ export default {
         'https://s1.ax1x.com/2023/07/04/pCySfyj.png'
       ],
       contents: ['APP UI KIT', '', 'Make your deign workflow easier and save your time ',],
-      porn:['WELCOME TO GEEZ APP'],
+      porn: ['WELCOME TO GEEZ APP'],
       contesnts: ['APP UI KawdaIT', 'WELCOME TO GEEZ APP', 'Make your deign workflow easier and save your time ',],
     };
   },

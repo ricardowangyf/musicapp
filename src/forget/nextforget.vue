@@ -15,34 +15,15 @@
       </div>
       <div class="password-input">
         <img src="../assets/svg/password.svg" class="icon" />
-        <input
-          class="password"
-          type="text"
-          placeholder="Password"
-          src="../svg/aite.svg"
-        />
-        <img
-          :src="pwdFlag ? textIcon : eyesicon"
-          @click="changePwd"
-          class="shouandhide"
-        />
+        <input class="password" type="text" placeholder="Password" src="../svg/aite.svg" />
+        <img :src="pwdFlag ? textIcon : eyesicon" @click="changePwd" class="shouandhide" />
         <div class="clear"></div>
       </div>
       <div class="password-input">
         <img src="../assets/svg/password.svg" class="icon" />
-        <input
-          class="password"
-          type="text"
-          placeholder="Confirm Password"
-          src="../svg/aite.svg"
-        />
+        <input class="password" type="text" placeholder="Confirm Password" src="../svg/aite.svg" />
       </div>
-      <el-input
-        v-model="input"
-        placeholder="Please input"
-        clearable
-        show-password
-      />
+      <el-input v-model="input" placeholder="Please input" clearable show-password />
       <div class="sign">
         <button>CHANGE PASSWORD</button>
       </div>
@@ -76,10 +57,12 @@ input {
   border-left: none;
   border-right: none;
 }
+
 .fotgot {
   background: #322d49;
   background-image: url("../assets/img/mask.png");
 }
+
 .fotgot {
   width: 100%;
   height: 740px;
@@ -88,6 +71,7 @@ input {
 .back {
   padding-top: 25px;
 }
+
 .forgot-contant h1 {
   font-family: Helvetica;
   font-size: 30px;
@@ -95,6 +79,7 @@ input {
   margin: 0;
   font-weight: 200;
 }
+
 .help h1 {
   font-family: Helvetica;
   font-size: 12px;
@@ -103,6 +88,7 @@ input {
   margin: 0;
   font-weight: 200;
 }
+
 .password {
   font-size: 18px;
   width: 76%;
@@ -111,14 +97,17 @@ input {
   outline: none;
   padding: 12px 35px;
 }
+
 .icon {
   width: 30px;
   height: 30px;
 }
+
 .icon {
   position: relative;
   top: 40px;
 }
+
 .sign {
   border: none;
   display: flex;

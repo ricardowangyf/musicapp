@@ -7,35 +7,16 @@
       <div class="login-input">
         <div class="password-input">
           <img src="../assets/svg/user.svg" class="icon-emaail" />
-          <input
-            type="password"
-            placeholder="Name"
-            class="password"
-            src="../svg/aite.svg"
-          />
+          <input type="password" placeholder="Name" class="password" src="../svg/aite.svg" />
         </div>
         <div class="password-input">
           <img src="../assets/svg/aite.svg" class="icon-email" />
-          <input
-            class="password"
-            type="text"
-            placeholder="E-mail"
-            src="../svg/aite.svg"
-          />
+          <input class="password" type="text" placeholder="E-mail" src="../svg/aite.svg" />
         </div>
         <div class="password-input">
           <img src="../assets/svg/password.svg" class="icon-email" />
-          <input
-            class="password"
-            type="text"
-            placeholder="Password"
-            src="../svg/aite.svg"
-          />
-          <img
-            :src="pwdFlag ? textIcon : eyesicon"
-            @click="changePwd"
-            class="shouandhide"
-          />
+          <input class="password" type="text" placeholder="Password" src="../svg/aite.svg" />
+          <img :src="pwdFlag ? textIcon : eyesicon" @click="changePwd" class="shouandhide" />
           <div class="clear"></div>
         </div>
       </div>
@@ -80,13 +61,16 @@ input {
   border-left: none;
   border-right: none;
 }
+
 input {
   outline: none;
 }
+
 .center {
   margin: 0 auto;
   max-width: 300px;
 }
+
 .clear {
   clear: both;
 }
@@ -96,18 +80,22 @@ input {
   height: 740px;
   background-image: url("../assets/img/signup.png");
 }
+
 .login-img img {
   width: 100%;
 }
+
 .icon-emaail {
   position: relative;
   top: 3px;
   left: 4px;
 }
+
 .icon-emaail {
   width: 20px;
   height: 20px;
 }
+
 .image-caption {
   transform: translate(-50%, -50%);
   font-family: Helvetica;
@@ -115,9 +103,11 @@ input {
   color: #fff;
   letter-spacing: 0;
 }
+
 .login-input {
   padding-top: 12%;
 }
+
 .password {
   font-size: 20px;
   width: 74%;
@@ -129,15 +119,18 @@ input {
 .password-input {
   padding-top: 35px;
 }
+
 .shouandhide {
   position: relative;
   bottom: 32px;
   float: right;
   right: 31px;
 }
+
 .title {
   padding-top: 22%;
 }
+
 .icon-email {
   width: 20px;
   height: 20px;
@@ -171,6 +164,7 @@ input {
   display: flex;
   justify-content: flex-end;
 }
+
 .forgot-button button {
   background: rgb(0 0 0 / 0%);
   color: #8d92a3;
@@ -179,16 +173,19 @@ input {
   padding-top: 23px;
   font-size: 18px;
 }
+
 .contant {
   display: flex;
   justify-content: center;
   padding-right: 7%;
   padding-top: 10%;
 }
+
 .contant span {
   font-size: 16px;
   color: #eeeeee;
 }
+
 .login-name {
   padding-top: 20px;
 }

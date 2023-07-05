@@ -15,12 +15,7 @@
       </div>
       <div class="password-input">
         <img src="../assets/svg/aite.svg" class="icon-emaail" />
-        <input
-          type="password"
-          placeholder="E-mail"
-          class="password"
-          src="../svg/aite.svg"
-        />
+        <input type="password" placeholder="E-mail" class="password" src="../svg/aite.svg" />
       </div>
       <div class="sign" @click="up()">
         <button>SIGN UP</button>
@@ -56,10 +51,12 @@ input {
   border-left: none;
   border-right: none;
 }
+
 .fotgot {
   background: #322d49;
   background-image: url("../assets/img/mask.png");
 }
+
 .fotgot {
   width: 100%;
   height: 740px;
@@ -68,6 +65,7 @@ input {
 .back {
   padding-top: 25px;
 }
+
 .forgot-contant h1 {
   font-family: Helvetica;
   font-size: 30px;
@@ -76,6 +74,7 @@ input {
   margin: 0;
   font-weight: 200;
 }
+
 .help h1 {
   font-family: Helvetica;
   font-size: 12px;
@@ -85,6 +84,7 @@ input {
   margin: 0;
   font-weight: 200;
 }
+
 .password {
   font-size: 18px;
   width: 74%;
@@ -94,11 +94,13 @@ input {
   padding: 0px 0px 8px 35px;
   line-height: 23px;
 }
+
 .icon-emaail {
   position: relative;
   top: 3px;
   left: 4px;
 }
+
 .icon-emaail {
   width: 20px;
   height: 20px;
@@ -107,6 +109,7 @@ input {
 .password-input {
   padding-top: 33%;
 }
+
 .sign {
   border: none;
   display: flex;
@@ -127,5 +130,4 @@ input {
   padding: 17px;
   border-radius: 7px;
   font-weight: 600;
-}
-</style>
+}</style>
