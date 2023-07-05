@@ -16,7 +16,15 @@
     </div>
     <div class="content">
       <p>{{ currentContent }}</p>
+      <p>{{ porn }}</p>
+      <p>{{ currentContent }}</p>
     </div>
+    <!-- <div class="content">
+      <p>{{ currentContent }}</p>
+    </div>
+    <div class="content">
+      <p>{{ currentContent }}</p>
+    </div> -->
   </div>
 </template>
 
@@ -27,12 +35,14 @@ export default {
     return {
       activeIndex: 0,
       images: [
-        'https://pic.imgdb.cn/item/64a36d101ddac507cc2bcd5a.jpg',
-        'https://pic.imgdb.cn/item/64a36d211ddac507cc2bed0b.jpg',
-        'https://pic.imgdb.cn/item/64a36d331ddac507cc2c02b0.jpg',
-        'https://pic.imgdb.cn/item/64a36c411ddac507cc2aceca.jpg'
+        'https://s1.ax1x.com/2023/07/04/pCySgfS.png',
+        'https://free.wzznft.com/i/2023/07/05/vfmr.png',
+        'https://free.wzznft.com/i/2023/07/05/p9ax.png',
+        'https://s1.ax1x.com/2023/07/04/pCySfyj.png'
       ],
-      contents: ['Content 1', 'Content 2', 'Content 3']
+      contents: ['APP UI KIT', '', 'Make your deign workflow easier and save your time ',],
+      porn:['WELCOME TO GEEZ APP'],
+      contesnts: ['APP UI KawdaIT', 'WELCOME TO GEEZ APP', 'Make your deign workflow easier and save your time ',],
     };
   },
   computed: {
@@ -61,9 +71,17 @@ export default {
   background-image: url('../assets/img/black.png');
 }
 
+.contant p {
+  color: #fff;
+}
+
 .slider {
   position: relative;
   text-align: center;
+}
+
+.content p {
+  margin: 0;
 }
 
 .image-container {
