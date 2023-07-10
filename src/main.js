@@ -2,6 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/index' //引入router
 import ElementPlus from 'element-plus'
+import './utils/validator'
+
 import 'element-plus/dist/index.css'
 import FBSignInButton from 'vue-facebook-signin-button'
 createApp(App).use(router).mount('#app')

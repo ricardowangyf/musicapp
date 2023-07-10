@@ -29,6 +29,11 @@ const router = createRouter({
       name: 'nextforget',
       component: () => import('../forget/nextforget.vue'), // 修改
     },//nextforget
+    {
+      path: '/vrify',
+      name: 'vrify',
+      component: () => import('../vrify/vrify.vue'), // 修改
+    },//vrify
   ]
 });
 

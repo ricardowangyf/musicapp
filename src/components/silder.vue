@@ -6,7 +6,7 @@
     <div class="slider">
       <div class="image-container" :class="{ 'image-container-small': activeIndex !== 0 }">
         <img :src="currentImage"
-          :style="{ width: activeIndex === 0 ? '340px' : '350px', height: activeIndex === 0 ? '340px' : '350px' }"
+          :style="{ width: activeIndex === 0 ? '360px' : '350px', height: activeIndex === 0 ? '360px' : '350px' }"
           alt="Slider Image" />
       </div>
     </div>
@@ -16,15 +16,12 @@
     </div>
     <div class="content">
       <p>{{ currentContent }}</p>
-      <p>{{ porn }}</p>
+      <p>{{ currentContent }}</p>
       <p>{{ currentContent }}</p>
     </div>
-    <!-- <div class="content">
-      <p>{{ currentContent }}</p>
-    </div>
-    <div class="content">
-      <p>{{ currentContent }}</p>
-    </div> -->
+  </div>
+  <div class="startbutton">
+    <button>GET TO STARTED</button>
   </div>
 </template>
 
@@ -40,8 +37,7 @@ export default {
         'https://free.wzznft.com/i/2023/07/05/p9ax.png',
         'https://s1.ax1x.com/2023/07/04/pCySfyj.png'
       ],
-      contents: ['APP UI KIT', '', 'Make your deign workflow easier and save your time ',],
-      porn: ['WELCOME TO GEEZ APP'],
+      contents: ['APP UI KIT', 'WELCOME TO GEEZ APP', 'Make your deign workflow easier and save your time ',],
       contesnts: ['APP UI KawdaIT', 'WELCOME TO GEEZ APP', 'Make your deign workflow easier and save your time ',],
     };
   },
@@ -93,10 +89,6 @@ export default {
   height: 360px;
 }
 
-.image-container img {
-  display: block;
-  margin: 0 auto;
-}
 
 .dots {
   display: flex;
@@ -127,5 +119,29 @@ export default {
 .contant {
   position: absolute;
   top: 0%;
+}
+
+.startbutton {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+
+.startbutton {
+  width: 295px;
+  height: 46px;
+}
+
+.startbutton button {
+  background: #CBFB5E;
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #20242F;
+  letter-spacing: 0.32px;
+  text-align: center;
+  line-height: 16px;
+  width: 295px;
+  height: 46px;
+  border: none;
 }
 </style>
