@@ -13,8 +13,9 @@
                 <div class="svg-width">
                     <img src="../assets/svg/phone.svg" style="height: 40px;width: 40px;" />
                 </div>
-                <div class="input">
-                    <input v-validate="'required|credit_card'" name="password" type="text" placeholder="Phone">
+                <div class="input" @click="hideKeyboard">
+                    <input v-validate="'required|credit_card'" name="password" type="text" placeholder="Phone"
+                        ref="inputField">
                 </div>
             </div>
             <div class="continue">
@@ -39,7 +40,10 @@ export default {
         Keyboard
     },
     methods: {
-        // back() {x
+        hideKeyboard() {
+            this.$refs.inputField.blur();
+        }
+        // back() {
         //     this.$router.push({
         //         path: "/signin",
         //     });
@@ -119,7 +123,7 @@ export default {
 }
 
 .continue {
-    padding: 20px 0 330px 0;
+    padding: 20px 0 75px 0;
 }
 
 .continue button {
