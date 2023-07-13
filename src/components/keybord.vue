@@ -9,7 +9,6 @@
             <button class="number" @click="addNumber()">3
                 <h1>DEF</h1>
             </button>
-
         </div>
         <div class="row">
             <button class="number" @click="addNumber()">4
