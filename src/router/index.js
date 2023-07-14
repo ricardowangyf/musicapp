@@ -44,6 +44,11 @@ const router = createRouter({
       name: 'vriftdone',
       component: () => import('../vrify/vriftdone.vue'), // 修改
     },//vriftdone
+    {
+      path: '/home',
+      name: 'home',
+      component: () => import('../home/home.vue'), // 修改
+    },//主页
   ]
 });
 
