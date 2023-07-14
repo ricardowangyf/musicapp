@@ -34,6 +34,16 @@ const router = createRouter({
       name: 'vrify',
       component: () => import('../vrify/vrify.vue'), // 修改
     },//vrify
+    {
+      path: '/vrifyagain',
+      name: 'vrifyagain',
+      component: () => import('../vrify/vrifyagain.vue'), // 修改
+    },//vrifyagain
+    {
+      path: '/vriftdone',
+      name: 'vriftdone',
+      component: () => import('../vrify/vriftdone.vue'), // 修改
+    },//vriftdone
   ]
 });
 

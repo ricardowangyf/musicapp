@@ -46,6 +46,9 @@ export default {
         return {
         };
     },
+    methods: {
+        addNumber() { },
+    }
 };
 </script>
   
@@ -66,8 +69,8 @@ export default {
 }
 
 .number {
+    width: 111px;
     height: 46px;
-    width: 90px;
 }
 
 .ceanter {

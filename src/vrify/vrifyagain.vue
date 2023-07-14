@@ -6,16 +6,21 @@
             </div>
             <div class="vrify-contant">
                 <h1>
-                    To continue enter your phone number
+                    Verify phone number
                 </h1>
             </div>
-            <div class="inputnumber">
-                <div class="svg-width">
-                    <img src="../assets/svg/phone.svg" style="height: 40px;width: 40px;" />
+            <div class="flex">
+                <div class="inputnumber">
+                    <input class="input" />
                 </div>
-                <div class="input" @click="hideKeyboard">
-                    <input v-validate="'required|credit_card'" name="password" type="text" placeholder="Phone"
-                        ref="inputField">
+                <div class="inputnumber">
+                    <input class="input" />
+                </div>
+                <div class="inputnumber">
+                    <input class="input" />
+                </div>
+                <div class="inputnumber">
+                    <input class="input" />
                 </div>
             </div>
             <div class="continue">
@@ -23,36 +28,31 @@
                     CONTINUE
                 </button>
             </div>
-            <Keyboard />
+            <div class="contant">
+                <h1>Resent</h1>
+                <h1>Code</h1>
+            </div>
         </div>
     </div>
 </template>
   
 <script>
-import Keyboard from "../components/keybord.vue";
 export default {
     name: "VriFy",
     data() {
         return {
         };
     },
-    components: {
-        Keyboard
-    },
+
     methods: {
         hideKeyboard() {
             this.$refs.inputField.blur();
         },
         jixu() {
             this.$router.push({
-                path: "/vriftdone",
+                path: "/vrifyagain",
             });
         },
-        // back() {
-        //     this.$router.push({
-        //         path: "/signin",
-        //     });
-        // },
     },
 };
 </script>
@@ -68,11 +68,11 @@ export default {
 }
 
 .back {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .vrify-contant {
-    padding: 25px 0 47px 0;
+    padding: 45px 0 60px 0;
 }
 
 .vrify-contant h1 {
@@ -84,46 +84,19 @@ export default {
     font-weight: 200;
 }
 
-.svg-width {
-    height: 40px;
-    width: 60px;
-}
-
-.input {
-    width: 80%;
-    height: 60px;
-}
-
-.input {
-    position: relative;
-    right: 52px;
-}
-
 .inputnumber {
-    display: flex;
-    justify-content: flex-start;
-    padding: 30px 0 30px 0;
+    text-align: center;
 }
 
 .inputnumber input {
-    background: #0E0B1F;
-    border: none;
-    border-bottom: 2px solid #dbdbdb;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
+    width: 56%;
     outline: none;
-    color: #fff;
-    opacity: 0.7;
-    padding-left: 40px;
-    font-family: Helvetica;
-    font-size: 14px;
-    letter-spacing: 0;
-}
-
-.inputnumber input {
-    width: 95%;
-    height: 40px;
+    border-radius: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    background-color: #0E0B1F;
 }
 
 .continue {
@@ -136,5 +109,30 @@ export default {
     padding: 14px;
     border-radius: 3px;
     width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex {
+    padding: 18px 0 30px 0;
+}
+
+.contant {
+    padding-bottom: 275px;
+}
+
+.contant h1 {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #CBFB5E;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    margin: 0;
+    padding: 5px;
+    font-weight: 200;
 }
 </style>
