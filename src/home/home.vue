@@ -20,6 +20,24 @@
             <div>
                 <rotatingcart />
             </div>
+            <div>
+                <div class="video-contant">
+                    <h1>Geez Weekly</h1>
+                </div>
+                <div>
+                    <div class="weekaend">
+                        <h1>Pray Fo You</h1>
+                        <p>The Weekend</p>
+                    </div>
+                    <video width="100%" height="200" controls autoplay>
+                        <source src="https://streamja.com/2L9ZB" type="video/mp4">
+                        <object data="https://streamja.com/2L9ZB" width="100%" height="240">
+                            <embed width="100%" height="200" src="https://streamja.com/2L9ZB">
+                        </object>
+                    </video>
+
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -40,6 +58,11 @@ export default {
 </script>
   
 <style>
+h1 {
+    margin: 0;
+    color: #fff;
+}
+
 .home {
     background: #0E0B1F;
 }
@@ -94,6 +117,14 @@ export default {
     font-weight: 200;
 }
 
+.video-contant h1 {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: #EEEEEE;
+    letter-spacing: 0;
+    font-weight: 200;
+}
+
 .all h1 {
     margin: 0;
     font-family: Helvetica;
@@ -103,5 +134,22 @@ export default {
     opacity: 0.4;
     font-weight: 200;
     padding-top: 11px;
+}
+
+.weekaend h1 {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: #EEEEEE;
+    letter-spacing: 0;
+    font-weight: 200;
+}
+
+.weekaend p {
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 200;
 }
 </style>

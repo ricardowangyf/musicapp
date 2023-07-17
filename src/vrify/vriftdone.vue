@@ -29,7 +29,7 @@ export default {
     methods: {
         jixu() {
             this.$router.push({
-                path: "/vriftdone",
+                path: "/home",
             });
         },
     },
