@@ -130,4 +130,5 @@ input {
   padding: 17px;
   border-radius: 7px;
   font-weight: 600;
-}</style>
+}
+</style>

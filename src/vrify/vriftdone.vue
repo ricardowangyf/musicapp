@@ -86,4 +86,4 @@ export default {
     border-radius: 3px;
     width: 100%;
 }
-</style>
+</style>    

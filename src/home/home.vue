@@ -35,7 +35,6 @@
                             <embed width="100%" height="200" src="https://streamja.com/2L9ZB">
                         </object>
                     </video>
-
                 </div>
             </div>
         </div>
