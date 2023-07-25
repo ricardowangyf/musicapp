@@ -29,12 +29,11 @@
                         <h1>Pray Fo You</h1>
                         <p>The Weekend</p>
                     </div>
-                    <video width="100%" height="200" controls autoplay>
-                        <source src="https://streamja.com/2L9ZB" type="video/mp4">
-                        <object data="https://streamja.com/2L9ZB" width="100%" height="240">
-                            <embed width="100%" height="200" src="https://streamja.com/2L9ZB">
-                        </object>
-                    </video>
+                    <div id="playWnd" class="playWnd">
+                        <VideoPlayer class="vjs-custom-skin videoPlayer" ref="videoplayer" :playsinline="true" width="800px"
+                            height="600px" :options="playerOptions" customEventName="changed">
+                        </VideoPlayer>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,15 +42,33 @@
   
 <script>
 import rotatingcart from "../components/rotatingcart.vue";
+import { VideoPlayer } from "vue-video-player";
+import 'video.js/dist/video-js.css'
 export default {
     name: "HomePage",
     data() {
         return {
+            playerOptions: {
+                // width: "800px",
+                // height: "600px",
+                language: "zh-CN",
+                muted: true,// 默认情况下将会消除任何音频
+                autoplay: true,// 如果true,浏览器准备好时开始回放。
+                controls: false, //不显示暂停、声音、进度条组件
+                loop: true, // 视频一结束就重新开始。
+                sources: [
+                    {
+                        type: "video/mp4",
+                        src: "../assets/video/周杰伦MV" // url地址
+                    },
+                ],
+            },
         };
     },
     methods: {},
     components: {
-        rotatingcart
+        rotatingcart,
+        VideoPlayer,
     },
 };
 </script>
@@ -60,6 +77,10 @@ export default {
 h1 {
     margin: 0;
     color: #fff;
+}
+
+#playWnd {
+    width: 20%;
 }
 
 .home {

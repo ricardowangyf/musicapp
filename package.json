@@ -19,7 +19,8 @@
     "vue": "^3.2.13",
     "vue-facebook-signin-button": "^1.0.1",
     "vue-router": "^4.2.2",
-    "vue-touch-keyboard": "^0.3.2"
+    "vue-touch-keyboard": "^0.3.2",
+    "vue-video-player": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
