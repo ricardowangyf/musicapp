@@ -30,8 +30,8 @@
                         <p>The Weekend</p>
                     </div>
                     <div id="playWnd" class="playWnd">
-                        <VideoPlayer class="vjs-custom-skin videoPlayer" ref="videoplayer" :playsinline="true" width="800px"
-                            height="600px" :options="playerOptions" customEventName="changed">
+                        <VideoPlayer class="vjs-custom-skin videoPlayer" ref="videoplayer" :playsinline="true"
+                            :options="playerOptions" customEventName="changed">
                         </VideoPlayer>
                     </div>
                 </div>

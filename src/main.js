@@ -7,5 +7,5 @@ import 'element-plus/dist/index.css'
 import FBSignInButton from 'vue-facebook-signin-button'
 createApp(App).use(router).mount('#app')
 const app = createApp(App)
-app.use(router, ElementPlus,FBSignInButton) //使用router
+app.use(router, ElementPlus, FBSignInButton) //使用router
 app.mount('#app')
