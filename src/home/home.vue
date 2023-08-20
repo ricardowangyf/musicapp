@@ -17,22 +17,22 @@
                     <h1>View all</h1>
                 </div>
             </div>
-            <div>
+            <div class="catr">
                 <rotatingcart />
             </div>
             <div>
                 <div class="video-contant">
                     <h1>Geez Weekly</h1>
                 </div>
-                <div>
+                <div class="videoname">
                     <div class="weekaend">
                         <h1>Pray Fo You</h1>
                         <p>The Weekend</p>
                     </div>
                     <div id="playWnd" class="playWnd">
-                        <VideoPlayer class="vjs-custom-skin videoPlayer" ref="videoplayer" :playsinline="true"
-                            :options="playerOptions" customEventName="changed">
-                        </VideoPlayer>
+                        <video width="320" height="240" controls autoplay>
+                            <source src="../assets/video/周杰伦MV.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -42,33 +42,15 @@
   
 <script>
 import rotatingcart from "../components/rotatingcart.vue";
-import { VideoPlayer } from "vue-video-player";
-import 'video.js/dist/video-js.css'
 export default {
     name: "HomePage",
     data() {
         return {
-            playerOptions: {
-                // width: "800px",
-                // height: "600px",
-                language: "zh-CN",
-                muted: true,// 默认情况下将会消除任何音频
-                autoplay: true,// 如果true,浏览器准备好时开始回放。
-                controls: false, //不显示暂停、声音、进度条组件
-                loop: true, // 视频一结束就重新开始。
-                sources: [
-                    {
-                        type: "video/mp4",
-                        src: "../assets/video/周杰伦MV" // url地址
-                    },
-                ],
-            },
         };
     },
     methods: {},
     components: {
         rotatingcart,
-        VideoPlayer,
     },
 };
 </script>
@@ -171,5 +153,20 @@ h1 {
     color: #FFFFFF;
     letter-spacing: 0;
     font-weight: 200;
+}
+
+.weekaend {
+    position: relative;
+    top: 98px;
+    left: 7px;
+}
+
+.videoname {
+    position: relative;
+    bottom: 63px;
+}
+
+.catr {
+    padding-bottom: 18px;
 }
 </style>
