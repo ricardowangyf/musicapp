@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="catr">
-                <rotatingcart />
+                <!-- <rotatingcart /> -->
             </div>
             <div>
                 <div class="video-contant">
@@ -41,7 +41,7 @@
 </template>
   
 <script>
-import rotatingcart from "../components/rotatingcart.vue";
+// import rotatingcart from "../components/rotatingcart.vue";
 export default {
     name: "HomePage",
     data() {
@@ -50,7 +50,7 @@ export default {
     },
     methods: {},
     components: {
-        rotatingcart,
+        // rotatingcart,
     },
 };
 </script>
