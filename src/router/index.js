@@ -12,42 +12,43 @@ const router = createRouter({
     {
       path: '/signup',
       name: 'signup',
-      component: () => import('../login/signup.vue'),  
+      component: () => import('../login/signup.vue'),
     },//sign up 
     {
       path: '/signin',
       name: 'signin',
-      component: () => import('../login/signin.vue'),  
+      component: () => import('../login/signin.vue'),
     },//sign in
+
     {
       path: '/forgot',
       name: 'forgot',
-      component: () => import('../forget/forgot.vue'),  
+      component: () => import('../forget/forgot.vue'),
     },//forgot
     {
       path: '/nextforget',
       name: 'nextforget',
-      component: () => import('../forget/nextforget.vue'),  
+      component: () => import('../forget/nextforget.vue'),
     },//nextforget
     {
       path: '/vrify',
       name: 'vrify',
-      component: () => import('../vrify/vrify.vue'),  
+      component: () => import('../vrify/vrify.vue'),
     },//vrify
     {
       path: '/vrifyagain',
       name: 'vrifyagain',
-      component: () => import('../vrify/vrifyagain.vue'),  
+      component: () => import('../vrify/vrifyagain.vue'),
     },//vrifyagain
     {
       path: '/vriftdone',
       name: 'vriftdone',
-      component: () => import('../vrify/vriftdone.vue'),  
+      component: () => import('../vrify/vriftdone.vue'),
     },//vriftdone
     {
       path: '/home',
       name: 'home',
-      component: () => import('../home/home.vue'),  
+      component: () => import('../home/home.vue'),
     },//主页
   ]
 });

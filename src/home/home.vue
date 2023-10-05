@@ -36,12 +36,17 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <h2>Recently Music</h2>
+            </div>
+            <div>
+
+            </div>
         </div>
     </div>
 </template>
   
 <script>
-// import rotatingcart from "../components/rotatingcart.vue";
 export default {
     name: "HomePage",
     data() {
@@ -50,7 +55,6 @@ export default {
     },
     methods: {},
     components: {
-        // rotatingcart,
     },
 };
 </script>
