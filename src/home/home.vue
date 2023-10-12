@@ -17,9 +17,7 @@
                     <h1>View all</h1>
                 </div>
             </div>
-            <div class="catr">
-                <!-- <rotatingcart /> -->
-            </div>
+            <div class="catr"></div>
             <div>
                 <div class="video-contant">
                     <h1>Geez Weekly</h1>
